@@ -3,11 +3,11 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* margin-top: 49px; */
+    margin-top: 49px;
     z-index: 1;
     margin-left: 5%;
     margin-right: 10%;
-    background-color: aqua;
+    
 }
 
 .content{
@@ -17,14 +17,16 @@
     align-items: flex-start;
     color:white;
     z-index: 1;
+    margin-bottom:33px;
+    
 
 }
-.text{
+/* .text{
     width: 53%;
-}
+} */
 
 .title{
-    font-size: 110px;
+    font-size: 72px;
     font-weight: 600;
     margin-bottom: 33px;
     color: #ffffff;
@@ -32,7 +34,7 @@
 }
 
 .description{
-    font-size: 28px;
+    font-size: 24px;
     margin-bottom: 52px;
     
 }
@@ -46,4 +48,5 @@
     font-weight: 300;
     padding: 17px 26px;
     box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.25);
+   
 }
