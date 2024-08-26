@@ -7,13 +7,19 @@
 
 .arch {
     width: 450px;
-    height: 600px;
+    height: 650px;
     border-radius: 0 0 330px 330px; /* Creates a bottom circle with a top rectangle */
     z-index: 2;
     position: absolute;
     top:0;
     left: 60%;
     background: rgb(0,0,0);
-background: linear-gradient(180deg, rgba(0,0,0,0) 5%, rgba(255,255,255,1) 80%);
+background: linear-gradient(180deg, rgba(0,0,0,0) 5%, rgba(255,255,255,1) 90%);
+  }
+
+  @media screen and (max-width: 830px){
+    .arch{
+        display: none;
+    }
   }
   
