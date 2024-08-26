@@ -1,0 +1,85 @@
+
+.navbar{
+    position:relative;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+    padding-top: 61px;
+    z-index:2;
+    margin: 0 5%;
+    font-family: 'THICCCBOI';
+}
+
+.title{
+    
+    font-size:30px;
+    font-weight:600;
+    text-decoration: none;
+    color:blueviolet;
+}
+
+
+.menu{
+    display: flex;
+}
+
+.menuItems{
+    display: flex;
+    gap:47px;
+    list-style: none;
+}
+
+
+
+.menuIcon{
+    font-size: 24px;
+    cursor:pointer;
+}
+.menuItems a{
+    font-size: 19px;
+    text-decoration: none;
+    color: black;
+
+}
+
+@media screen and (max-width: 830px){
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start
+    }
+
+    .menu{
+        position: absolute;
+        right: 0;
+        margin-right: 10%;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 11px;
+        z-index: 3;
+
+    }
+
+    .menuIcon{
+        display: block;
+        cursor:pointer;
+    }
+
+    .menuItems{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        gap: 13px;
+        background: rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+        backdrop-filter: blur(5px);
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        padding: 24px 33px;
+        
+    }
+    
+    .menuOpen{
+        display: flex;
+        z-index: 1;
+    }
+    }
