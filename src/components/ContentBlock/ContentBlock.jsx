@@ -31,7 +31,7 @@ const ContentBlock = () => {
         </ul>
       </div>
       <img src={Arrow} className={styles.svgIcon} alt="Arrow" />{" "}
-      {/* Use SVG as an image source */}
+      <h3 className={styles.tag}>See it in Action</h3>
     </div>
   );
 };
