@@ -48,7 +48,6 @@
     font-size: 0.5em; /* Adjust the icon size */
     color: rgb(197,173,197);
     color: linear-gradient(180deg, rgba(197,173,197,1) 0%, rgba(178,181,223,1) 100%);
-    /* color: #433982; Change the icon color */
     margin-right: 19px; /* Space between icon and text */
   }
 
@@ -77,3 +76,29 @@
     right: 50%; 
     margin-top:7%;
 }
+
+@media screen and (max-width: 830px){
+    .block {
+        flex-direction: column;
+      }
+
+    .list{
+        margin-top: 5%;
+        margin-left: 0;
+    }
+
+    .svgIcon{
+        position: absolute;
+        top: 100%; 
+        right: 70%; 
+        margin-top:15%;
+    }
+    
+    .tag{
+        position: absolute;
+        top: 95%; 
+        right: 38%; 
+        margin-top:15%;
+    }
+    
+    }
