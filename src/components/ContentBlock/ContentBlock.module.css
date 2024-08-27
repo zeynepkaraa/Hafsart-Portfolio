@@ -1,0 +1,104 @@
+.block{
+    position:relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 130px;
+    margin-bottom: 130px;
+    z-index: 1;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    
+}
+
+.container{
+    flex:1;
+    margin-bottom:3% ;
+}
+
+.container2{
+    flex: 1; 
+    display: flex;
+    flex-direction: column;
+    margin-bottom:3% ;
+}
+
+.list {
+    line-height: 1.8;
+    margin-left: 18%;
+    padding: 0;
+    list-style: none;
+  }
+
+  .item {
+    font-size: 30px;
+    color:#433982;
+    padding-bottom: 10px; /* Adds space below each list item */
+    border-bottom: 1px solid #ccc; /* Adds a line below each list item */
+    display: flex; /* Aligns the icon and text */
+    align-items: center;
+  }
+  
+  .list li:last-child {
+    border-bottom: none; /* Removes the border from the last list item */
+  }
+
+  .icon {
+    font-size: 0.5em; /* Adjust the icon size */
+    color: rgb(197,173,197);
+    color: linear-gradient(180deg, rgba(197,173,197,1) 0%, rgba(178,181,223,1) 100%);
+    margin-right: 19px; /* Space between icon and text */
+  }
+
+.title{
+    margin-bottom:33px;
+    font-size: 56px;
+    font-weight: 500;
+    color:#433982;
+}
+
+.description{
+    font-size:18px;
+    color:#8B9AB0;
+}
+
+.svgIcon{
+    position: absolute;
+    top: 100%; 
+    right: 60%; 
+    margin-top:5%;
+}
+
+.tag{
+    position: absolute;
+    top: 84%; 
+    right: 50%; 
+    margin-top:7%;
+}
+
+@media screen and (max-width: 830px){
+    .block {
+        flex-direction: column;
+      }
+
+    .list{
+        margin-top: 5%;
+        margin-left: 0;
+    }
+
+    .svgIcon{
+        position: absolute;
+        top: 100%; 
+        right: 70%; 
+        margin-top:15%;
+    }
+    
+    .tag{
+        position: absolute;
+        top: 95%; 
+        right: 38%; 
+        margin-top:15%;
+    }
+    
+    }

@@ -10,6 +10,7 @@
     font-family: 'THICCCBOI';
 }
 
+
 .title{
     
     font-size:30px;
@@ -18,6 +19,9 @@
     color:white;
 }
 
+.newTitle{
+    color:#433982;
+}
 
 .menu{
     display: flex;

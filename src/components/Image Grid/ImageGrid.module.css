@@ -1,0 +1,124 @@
+/* ImageGrid.module.css */
+.container{
+    position:relative;
+    align-items: center;
+    z-index: 1;
+    margin-left: 7%;
+    margin-right: 7%;
+    margin-top: 12%;
+}
+
+.title{
+    margin-right: 3%;
+    text-align: center;
+    font-weight: 500;
+    color:#433982;
+}
+.grid {
+    margin: 3% 10%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 2 columns */
+    gap: 0.8rem; /* Adjust gap between images */
+  }
+  
+  .imageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden; /* Ensure the image does not overflow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+  
+  .image {
+    height: 350px; /* Adjust height as needed */
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem; /* Adjust border radius as needed */
+    transition: transform 0.3s ease-in-out;
+}
+  
+.imageWrapper:hover .image {
+    transform: scale(1.05); /* Slightly zoom in the image */
+}
+
+.imageWrapper:hover .titleOverlay {
+    background: rgba(0, 0, 0, 0.6); /* Darker semi-transparent background on hover */
+}
+  .titleOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: flex-end;
+    display: flex;
+    background: rgba(0, 0, 0, 0.4); /* Semi-transparent background */
+    border-radius: 0.5rem; /* Same as image border-radius */
+    padding: 0.5rem;
+
+  }
+
+  .eventName{
+    margin-left: 2%;
+    margin-bottom: 3%;
+    font-size: 1.25rem;
+    color: white; 
+    font-weight: 600;
+
+  }
+
+.blob{
+    position: absolute;
+    bottom: 60%; /* Adjust this value to move it below the container */
+    left: 90%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
+    background: linear-gradient(180deg, rgba(197,173,197,1) 0%, rgba(178,181,223,1) 100%);
+    width: 400px;
+    height: 400px;
+    box-shadow: inset 50px 50px 17px 0px #eadeea,
+                inset 100px 100px 17px 0px #b2b5df;
+                opacity: 0.5;
+    filter: blur(40px);    
+    z-index: -1;
+    
+
+    
+}
+
+.blob2{
+    position: absolute;
+    bottom: 20%; /* Adjust this value to move it below the container */
+    left: 7%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
+    background: linear-gradient(0deg, rgba(197,173,197,1) 0%, rgba(178,181,223,1) 100%);
+    width: 300px;
+    height: 300px;
+    box-shadow: inset 50px 50px 17px 0px #b2b5df ,
+                inset 100px 100px 17px 0px  #eadeea;
+                opacity: 0.5;
+    filter: blur(40px);    
+    z-index: -1;
+    
+
+    
+}
+
+@media screen and (max-width: 830px){
+    .grid{
+        grid-template-columns: repeat(1, 1fr); /* Creates 2 columns */
+    }
+    
+
+    .blob, .blob2{
+        display: none;
+    }
+
+    .title{
+        margin-left: 6%;
+        padding-top: 3%;
+    }
+}
+
