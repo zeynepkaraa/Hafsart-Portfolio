@@ -7,6 +7,8 @@ import ContentBlock from "../../ContentBlock/ContentBlock.jsx";
 import { GiLotusFlower } from "react-icons/gi";
 import styles from "./Home.module.css";
 import coupleImage from "../../../../assets/images/couple.png";
+import ImageGrid from "../../Image Grid/ImageGrid.jsx";
+import Footer from "../../Footer/Footer.jsx";
 const Home = () => {
   return (
     <div className={styles.page}>
@@ -29,24 +31,37 @@ const Home = () => {
       </div>
 
       <ContentBlock />
+      <div className="flex">
+        <ImageGrid />
+      </div>
 
-      {/* <div className={styles.cards}>
-        <Card
-          title="Coffee Time"
-          icon={<FaHeart />}
-          description="Enjoy a cup of freshly brewed coffee!"
-        />
-        <Card
-          title="Work Mode"
-          icon={<FaStar />}
-          description="Get productive and tackle your tasks."
-        />
-        <Card
-          title="Relax"
-          icon={<FaCouch />}
-          description="Take a break and unwind for a while."
-        />
-      </div> */}
+      <div className={styles.testimonial}>
+        <h1 className={styles.cardTitle}>
+          Our <span className={styles.highlight}>happy </span> clients says
+          about us
+        </h1>
+        <div className={styles.cards}>
+          <Card
+            review="This event was fantastic! Everything was perfect from start to finish."
+            clientImg="path/to/client-image.jpg"
+            clientName="Jane Doe"
+            eventType="Wedding"
+          />
+          <Card
+            review="This event was fantastic! Everything was perfect from start to finish."
+            clientImg="path/to/client-image.jpg"
+            clientName="Jane Doe"
+            eventType="Wedding"
+          />
+          <Card
+            review="This event was fantastic! Everything was perfect from start to finish."
+            clientImg="path/to/client-image.jpg"
+            clientName="Jane Doe"
+            eventType="Wedding"
+          />
+        </div>
+      </div>
+      <Footer />
     </div>
   );
 };

@@ -40,15 +40,29 @@
 background: linear-gradient(180deg, rgba(0,0,0,0) 5%, rgba(255,255,255,1) 90%);
   }
 
-
+.testimonial{
+    margin: 10%;
+    margin-left: 10%;
+    
+}
 .cards{
+    margin-top: 5%;
     margin-left: 7%;
-    position: absolute;
     z-index: 2;
-    top:80%;
     display: flex;
     gap: 20px;
     padding: 13px;
+}
+
+.cardTitle{
+    color:#433982;
+    font-weight: 500;
+    
+}
+
+.highlight{
+    font-family: 'Times New Roman', Times, serif;
+    color:#C5ADC5;
 }
   @media screen and (max-width: 830px){
     .arch{
@@ -58,6 +72,13 @@ background: linear-gradient(180deg, rgba(0,0,0,0) 5%, rgba(255,255,255,1) 90%);
     .arches{
         flex-direction: column;
         align-items: center;
+    }
+
+    .cards{
+        gap: 24px;
+        flex-direction: column;
+        align-items: center;
+
     }
 
   }
