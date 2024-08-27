@@ -1,0 +1,28 @@
+.card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px; /* Reduced padding */
+    background-color: white;
+    text-align: center;
+    width: 220px; /* Reduced width */
+    z-index: 2;
+  }
+  
+  .icon {
+    font-size: 35px;
+    color: #433982;
+    margin-bottom: 10px; 
+  }
+  
+  .title {
+    font-size: 20px; 
+    font-weight: 600;
+    margin-bottom: 8px; 
+    color: #333;
+  }
+  
+  .description {
+    font-size: 14px;
+    color: #666;
+  }
+  
