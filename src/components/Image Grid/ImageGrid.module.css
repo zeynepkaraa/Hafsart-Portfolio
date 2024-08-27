@@ -26,6 +26,8 @@
     align-items: center;
     justify-content: center;
     position: relative;
+    overflow: hidden; /* Ensure the image does not overflow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   }
   
   .image {
@@ -33,8 +35,16 @@
     width: 100%;
     object-fit: cover;
     border-radius: 0.5rem; /* Adjust border radius as needed */
-  }
+    transition: transform 0.3s ease-in-out;
+}
   
+.imageWrapper:hover .image {
+    transform: scale(1.05); /* Slightly zoom in the image */
+}
+
+.imageWrapper:hover .titleOverlay {
+    background: rgba(0, 0, 0, 0.6); /* Darker semi-transparent background on hover */
+}
   .titleOverlay {
     position: absolute;
     top: 0;
