@@ -37,6 +37,8 @@ const ImageGrid = () => {
             </div>
           </div>
         ))}
+        <div className={styles.blob}></div>
+        <div className={styles.blob2}></div>
       </div>
     </div>
   );
