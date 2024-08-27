@@ -1,13 +1,13 @@
-import "./App.css";
+import styles from "./App.module.css";
 
 import Hero from "./components/Hero/Hero.jsx";
-import Home from "./components/Home.jsx";
+import HomePage from "./components/Pages/HomePage/Home.jsx";
 import Navbar from "./components/Navbar/Navbar.jsx";
 
 function App() {
   return (
-    <div className="App">
-      <Home />
+    <div className={styles.App}>
+      <HomePage />
     </div>
   );
 }
