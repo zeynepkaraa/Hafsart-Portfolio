@@ -1,0 +1,80 @@
+.page{
+    width: 100%;
+    margin:0;
+    padding: 0;
+}
+
+.eventCard{
+    height: 350px; /* Adjust height as needed */
+    width: 100%;
+}
+ .imageWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden; /* Ensure the image does not overflow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    
+  }
+  
+  .image {
+    height: 350px; /* Adjust height as needed */
+    width: 100%;
+    object-fit: cover;
+    border-radius: 0.5rem; /* Adjust border radius as needed */
+    transition: transform 0.3s ease-in-out;
+}
+  
+.imageWrapper:hover .image {
+    transform: scale(1.05); /* Slightly zoom in the image */
+}
+
+.imageWrapper:hover .titleOverlay {
+    background: linear-gradient(0deg, rgba(234,222,234,1) 0%, rgba(178,181,223,0) 100%); /* Darker semi-transparent background on hover */
+}
+  .titleOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: flex-end;
+    display: flex;
+    background: linear-gradient(0deg, rgba(234,222,234,1) 0%, rgba(178,181,223,0) 100%);
+    border-radius: 0.5rem; /* Same as image border-radius */
+    padding: 0.5rem;
+    
+
+  }
+
+  .eventName{
+    margin-left: 3%;
+    margin-bottom: 3%;
+    font-size: 1.4rem;
+    color: #433982;
+    font-weight: 700;
+
+  }
+
+.container{
+    margin: 5% 7%;
+}
+
+.title{
+    text-align: center;
+    font-size: 3.2rem;
+    color: #C5ADC5;
+    
+}
+
+.description{
+    margin: 2% 10%;
+    font-size: 1.2rem;
+    color:#8B9AB0;
+
+}
+
+
+
+
