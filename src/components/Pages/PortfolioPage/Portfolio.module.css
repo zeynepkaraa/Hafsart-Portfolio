@@ -1,0 +1,27 @@
+.page{
+    width: 100%;
+    margin: 0;
+}
+
+.container{
+    margin: 5% 0;
+}
+
+.arches{
+    display: flex;
+    justify-content: space-between; /* Ensures equal spacing between arches */
+    gap: 16px; /* Adjust the gap as needed */
+    margin: 2% 10% ;
+   
+}
+.title{
+    text-align: center;
+    font-size: 2.8rem;
+    color: #C5ADC5;
+    text-decoration: none;
+    
+}
+
+a{
+    text-decoration: none;
+}
