@@ -9,7 +9,7 @@
     align-items: flex-end;
     padding-bottom: 20px;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
-    
+    text-decoration: none;
   }
   
   .arch::before {
@@ -38,10 +38,11 @@
   
   .title {
     color: #433982;
-    font-size: px;
+    font-size: 36px;
     font-weight: 600;
     margin-left: 10%;
     margin-right: 50%;
     margin-bottom: 4%;
     z-index: 2;
+    text-decoration: none;
   }
