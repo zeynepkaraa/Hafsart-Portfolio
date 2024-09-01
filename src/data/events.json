@@ -1,0 +1,89 @@
+[
+    {
+      "id": 1,
+      "name": "Event 1",
+      "type": "Live",
+      "thumbnail": "../../assets/images/couple.png",
+      "images": ["../../assets/images/couple.png",
+      "../../assets/images/couple.png"],
+      "description": "This is a live event."
+    },
+    {
+      "id": 2,
+      "name": "Wedding 1",
+      "type": "Wedding",
+      "thumbnail": "../../assets/images/couple.png",
+      "images": ["../../assets/images/couple.png",
+      "../../assets/images/couple.png","../../assets/images/couple.png",
+      "../../assets/images/couple.png","../../assets/images/couple.png",
+      "../../assets/images/couple.png", "../../assets/images/couple.png"],
+      "description": "This is a wedding event."
+    },
+    {
+        "id": 3,
+        "name": "Wedding 1",
+        "type": "Wedding",
+        "thumbnail": "../../assets/images/couple.png",
+        "images": ["../../assets/images/couple.png",
+        "../../assets/images/couple.png"],
+        "description": "This is a wedding event."
+      },
+      {
+        "id": 4,
+        "name": "Wedding 1",
+        "type": "Wedding",
+        "thumbnail": "../../assets/images/couple.png",
+        "images": ["../../assets/images/couple.png",
+        "../../assets/images/couple.png"],
+        "description": "This is a wedding event."
+      },
+
+      {
+        "id": 5,
+        "name": "Wedding 1",
+        "type": "Live",
+        "thumbnail": "../../assets/images/couple.png",
+        "images": ["../../assets/images/couple.png",
+        "../../assets/images/couple.png"],
+        "description": "This is a wedding event."
+      },
+      {
+        "id": 6,
+        "name": "Wedding 1",
+        "type": "Live",
+        "thumbnail": "../../assets/images/couple.png",
+        "images": ["../../assets/images/couple.png",
+        "../../assets/images/couple.png"],
+        "description": "This is a wedding event."
+      },
+      {
+        "id": 7,
+        "name": "Wedding 1",
+        "type": "Live",
+        "thumbnail": "../../assets/images/couple.png",
+        "images": ["../../assets/images/couple.png",
+        "../../assets/images/couple.png"],
+        "description": "This is a wedding event."
+      },
+      {
+        "id": 8,
+        "name": "Wedding 1",
+        "type": "Live",
+        "thumbnail": "../../assets/images/couple.png",
+        "images": ["../../assets/images/couple.png",
+        "../../assets/images/couple.png"],
+        "description": "This is a wedding event."
+      },
+      {
+        "id": 9,
+        "name": "Wedding 1",
+        "type": "Live",
+        "thumbnail": "../../assets/images/couple.png",
+        "images": ["../../assets/images/couple.png",
+        "../../assets/images/couple.png"],
+        "description": "This is a wedding event."
+      }
+
+    
+  ]
+

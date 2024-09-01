@@ -9,6 +9,8 @@ import styles from "./Home.module.css";
 import coupleImage from "../../../../assets/images/couple.png";
 import ImageGrid from "../../Image Grid/ImageGrid.jsx";
 import Footer from "../../Footer/Footer.jsx";
+import { Link } from "react-router-dom";
+
 const Home = () => {
   return (
     <div className={styles.page}>
@@ -24,9 +26,15 @@ const Home = () => {
           <GiLotusFlower />
         </div>
         <div className={styles.arches}>
-          <Arch title="Live Events" image={coupleImage} />
-          <Arch title="Fashion Illustrations" image={coupleImage} />
-          <Arch title="Custom Portraits" image={coupleImage} />
+          <Link to={"/live"}>
+            <Arch title="Live Events" image={coupleImage} />
+          </Link>
+          <Link to={"/wedding"}>
+            <Arch title="Weddings" image={coupleImage} />
+          </Link>
+          <Link to={"/custom"}>
+            <Arch title="Custom Portraits" image={coupleImage} />
+          </Link>
         </div>
       </div>
 

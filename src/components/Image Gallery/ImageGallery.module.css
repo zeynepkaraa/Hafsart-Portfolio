@@ -1,0 +1,30 @@
+.gallery {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr); /* Four columns on larger screens */
+      gap: 16px;
+    }
+  
+  
+  .column {
+    
+    display: grid;
+    gap: 16px; /* Adjust gap between items as needed */
+  }
+  
+  .item {
+    overflow: hidden;
+  }
+  
+  .image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; /* Rounded corners for images */
+  }
+  
+  @media screen and (max-width: 830px){
+    .gallery{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px; /* Adjust gap between columns as needed */
+    }
+   
+  }
